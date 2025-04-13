@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "ApfelGrotezk";
+    src: url("/resources/fonts/CLT Apfel Grotezk/web/ApfelGrotezk-Regular.woff") format("woff2");
+  }
+
+* {
+    font-family: "ApfelGrotezk";
+}
