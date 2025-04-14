@@ -33,13 +33,13 @@
     --secondary-color: #000000;
     --tertiary-color: #D0D3D9; */
 
-    /* --primary-color: #e7e9ed;
+    --primary-color: #e7e9ed;
     --secondary-color: #0D0D0D;
-    --tertiary-color: #9eb2ca; */
+    --tertiary-color: #e7e9ed
 
-    --primary-color: #58594F;
+    /* --primary-color: #58594F;
     --secondary-color: #D8D9D0;
-    --tertiary-color: #2d2d28;
+    --tertiary-color: #2d2d28; */
 
     --primary-font: NyghtSerif;
     --secondary-font: ApfelGrotezk;
@@ -61,7 +61,7 @@ body {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    padding: 10px 0;
+    /* padding: 10px; */
     background: var(--tertiary-color);
     box-sizing: border-box;
 }
@@ -73,11 +73,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: fixed;
-    overflow: hidden; */
+    /* position: fixed;*/
+    overflow: hidden; 
     /* background-color: var(--secondary-color); */
     background: var(--secondary-color);
-    /* background: radial-gradient(circle,var(--secondary-color) 20%, var(--primary-color) 100%); */
+    background: radial-gradient(circle,var(--secondary-color) 10%, rgb(0,0,0,0.2) 100%),
+        url("/resources/imgs/010.png");
+    background-size: cover;
     box-sizing: border-box;
 }
 
