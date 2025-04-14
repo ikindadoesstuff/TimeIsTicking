@@ -40,10 +40,12 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
+
 body {
     display: flex;
     /* flex-flow: column;
@@ -66,14 +68,10 @@ body {
     font-size: 40pt;
     color: var(--main-text-color);
     font-family: var(--primary-font);
-    /* font-weight: bold; */
+    font-weight: 400;
 }
 
-/* .tickerbox > * {
-    
-} */
-
-.occasion {
+.occasion-name {
     font-weight: 700;
 }
 
@@ -87,6 +85,6 @@ body {
 }
 
 .over {
-    font-weight: 800;
+    /* font-weight: 700; */
     /* background-color: antiquewhite; */
 }
