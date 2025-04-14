@@ -1,8 +1,92 @@
 @font-face {
     font-family: "ApfelGrotezk";
-    src: url("/resources/fonts/CLT Apfel Grotezk/web/ApfelGrotezk-Regular.woff") format("woff2");
-  }
+    font-weight: 400;
+    src: url("/resources/fonts/CLT Apfel Grotezk/web/ApfelGrotezk-Regular.woff2");
+}
+
+@font-face {
+    font-family: "ApfelGrotezk";
+    font-weight: 700;
+    src: url("/resources/fonts/CLT Apfel Grotezk/web/ApfelGrotezk-Mittel.woff2");
+}
+
+@font-face {
+    font-family: "ApfelGrotezk";
+    font-weight: 800;
+    src: url("/resources/fonts/CLT Apfel Grotezk/web/ApfelGrotezk-Satt.woff2");
+}
+
+@font-face {
+    font-family: "NyghtSerif";
+    font-weight: 400;
+    src: url("/resources/fonts/nyght-serif-main/fonts/WEB/NyghtSerif-Regular.woff2");
+}
+
+@font-face {
+    font-family: "NyghtSerif";
+    font-weight: 700;
+    src: url("/resources/fonts/nyght-serif-main/fonts/WEB/NyghtSerif-Bold.woff2");
+}
+
+:root {
+    --main-text-color: black;
+    --alt-text-color: white;
+    --primary-font: NyghtSerif;
+    --secondary-font: ApfelGrotezk;
+}
 
 * {
-    font-family: "ApfelGrotezk";
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    /* flex-flow: column;
+    flex-wrap:; */
+}
+
+#Page {
+    /* height: 100%;
+    height: 100%; */
+    margin: auto;
+    padding: 10%;
+}
+
+.tickerbox {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40pt;
+    color: var(--main-text-color);
+    font-family: var(--primary-font);
+    /* font-weight: bold; */
+}
+
+/* .tickerbox > * {
+    
+} */
+
+.occasion {
+    font-weight: 700;
+}
+
+.percentage {
+    background-color: var(--main-text-color);
+    padding: 0 0.5ch 0 0.5ch;
+    margin: 0 0.5ch 0 0.5ch;
+    color: var(--alt-text-color);
+    font-weight: 700;
+    font-family: var(--secondary-font);
+}
+
+.over {
+    font-weight: 800;
+    /* background-color: antiquewhite; */
 }
